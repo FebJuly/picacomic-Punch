@@ -11,6 +11,8 @@ on:
   schedule:
     - cron: '2 2 * * *'
 
+  workflow_dispatch: # 支持手动触发
+
 jobs:
   build:
     runs-on: ubuntu-20.04 # 使用旧版本环境
