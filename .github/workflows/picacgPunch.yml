@@ -40,7 +40,7 @@ jobs:
       
     - name: Run
       env:        
-        accounts: ${{secrets.ACCOUNTS}}
-      run: dotnet run -- ${accounts}
+        ACCOUNTS: ${{secrets.ACCOUNTS}}
+      run: dotnet run -c Release --no-build -- "$ACCOUNTS"
      
         
